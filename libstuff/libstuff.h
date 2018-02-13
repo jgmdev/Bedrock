@@ -22,6 +22,7 @@
 // STL
 #include <algorithm>
 #include <atomic>
+#include <functional>
 #include <cctype>
 #include <chrono>
 #include <condition_variable>
