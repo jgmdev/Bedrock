@@ -7,6 +7,7 @@
 #include "BedrockServer.h"
 #include "BedrockPlugin.h"
 #include "plugins/Cache.h"
+#include "plugins/Files.h"
 #include "plugins/DB.h"
 #include "plugins/Jobs.h"
 #include "plugins/MySQL.h"
@@ -85,6 +86,7 @@ set<string> loadPlugins(SData& args) {
         {"DB",     new BedrockPlugin_DB()},
         {"JOBS",   new BedrockPlugin_Jobs()},
         {"CACHE",  new BedrockPlugin_Cache()},
+        {"FILES",  new BedrockPlugin_Files()},
         {"MYSQL",  new BedrockPlugin_MySQL()}
     };
 
